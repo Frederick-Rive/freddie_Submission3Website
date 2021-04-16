@@ -95,7 +95,7 @@ document.addEventListener("DOMContentLoaded", function(event){
   else if (screen.width <= parseInt(500)) {
     homeHeight = "1100px";
     storeHeight = "3520px";
-    bioHeight = "1290px";
+    bioHeight = "1140px";
     checkoutHeight = "1100px";
   }
   else {
