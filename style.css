@@ -20,10 +20,6 @@ a{
   color: inherit;
 }
 
-a:active{
-  background-color: red;
-}
-
 h1{
   padding: 20px 20% 0% 20%;
   font-size: 300%;
@@ -48,6 +44,19 @@ h4{
   font-size: 150%;
   display: inline;
   float: left;
+}
+
+h5{
+  margin: 5%;
+  font-size: 125%;
+  text-align: center;
+  height: 30px;
+}
+
+h6{
+  font-size: 175%;
+  text-align: center;
+  margin-top: 10px;
 }
 
 p{
@@ -84,87 +93,91 @@ aside{
 
 footer{
   position: absolute;
-  top: 950px;
+  top: 1100px;
   width: 100%;
 }
 
 article{
   background-color: #F3D362;
   box-shadow: 0px 5px 5px #B0A686;
+  position: relative;
 }
 
 input{
   margin: 4% 2%;
+  position: relative;
 }
 
 label{
   margin: 4% 0%;
+  position: relative;
+  z-index: 1;
 }
 
 /*its quite simply the most efficent way*/
 
-
 .col1{
   float: left;
   width: 50%;
+  position: relative;
 }
 
 .col2{
   float: left;
   width: 25%;
+  position: relative;
 }
 
 .col3{
   float: left;
   width: 75%;
+  position: relative;
 }
 
 .col4{
   float: left;
   width: 60%;
+  position: relative;
 }
 
 .col5{
   float: left;
   width: 40%;
+  position: relative;
 }
 
 .col6{
   float: left;
   width: 47.5%;
+  position: relative;
 }
 
 .col7{
   float: left;
   width: 100%;
+  position: relative;
 }
 
 .col8{
   float: left;
   width: 20%;
+  position: relative;
 }
 
 .col9{
   float: left;
   width: 30%;
+  position: relative;
 }
 
 .nav1{
   background-color: inherit;
-  text-decoration: none;
-  transition: text-decoration 1s;
 }
 
 .nav2{
   background-color: inherit;
   margin-right: 5%;
   border-width: 0 1px 0 1px;
-  text-decoration: inherit;
-  transition: text 1s;
-}
-
-.nav1:hover {
-  text-decoration: line-through;
 }
 
 .menunav{
@@ -182,7 +195,7 @@ label{
   text-decoration: inherit;
   background: rgb(243,211,98);
   background: linear-gradient(90deg, rgba(243,211,98,1) 65%, rgba(0,0,0,0) 95%);
-  z-index: 2;
+  z-index: 1;
 }
 
 .mainbanner :: after{
@@ -191,7 +204,7 @@ label{
   content: "";
 }
 
-.mainheaderimage{
+#mainheaderimage{
   float: right;
   max-width: 50%;
   height: 100px;
@@ -199,17 +212,14 @@ label{
   left: 60.5%;
   top: 0px;
   z-index: -1;
-  height = 100px;
 }
 
 .navbanner{
   background-color: #FAA669;
   border-style: solid;
-  border-width: thin;
   padding: 0 5% 0 2%;
   height: 50px;
   box-shadow: 0px 5px 5px #B0A686;
-  z-index: 2;
 }
 
 .navbanner :: after{
@@ -218,10 +228,9 @@ label{
   content: "";
 }
 
-.footerbanner{
+#footerbanner{
   background-color: #FAA669;
   border-style: solid;
-  border-width: thin;
   padding: 0 5% 0 2%;
   height: 50px;
   box-shadow: 0px 5px 5px #B0A686;
@@ -236,7 +245,6 @@ label{
   margin-top: 4%;
   height: 220px;
   border-style: solid;
-  border-width: thin;
   box-shadow: none;
 }
 
@@ -255,6 +263,12 @@ label{
 .colgap{
   float: left;
   margin: 2.5%;
+}
+
+.thincol{
+  float: left;
+  margin: 1%;
+  margin-top: 50px;
 }
 
 .rowgap{
@@ -283,23 +297,58 @@ label{
   padding-top: 7px;
   font-size: 20px;
   position: relative;
+  cursor: pointer;
 }
 
-#customiseBox{
+.customiseBox{
   height: 475px;
-  width: 32%;
+  width: 35%;
   background-color: #F3D362;
   border-style: solid;
-  border-width: thin;
   position: absolute;
-  top: 1300px;
-  left: 150px;
   z-index: 1;
+  display: none;
+}
+
+#bollywoodbombcustom{
+  top: 545px;
+  left: 20%;
+}
+
+#desividesicustom{
+  top: 545px;
+  left: 51.5%;
+}
+
+#margheritacustom{
+  top: 825px;
+  left: 20%;
+}
+
+#paneergonutscustom{
+  top: 825px;
+  left: 51.5%;
+}
+
+#paneermangotangocustom{
+  top: 1105px;
+  left: 20%;
+}
+
+#paneeronfirecustom{
+  top: 1105px;
+  left: 51.5%;
+}
+
+#popeyelovercustom{
+  top: 1385px;
+  left: 20%;
 }
 
 .customprice{
-  margin-top: 4%;
-  margin-bottom: 7.4%;
+  margin-top: 8px;
+  margin-bottom: 11px;
+  font-size: 95%;
   text-align: center;
 }
 
@@ -311,13 +360,82 @@ label{
   text-align: center;
   padding-top: 7px;
   font-size: 20px;
+  cursor: pointer;
+}
+
+.price{
+  display: inline;
+}
+
+#menufooter{
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  height: 120px;
+  width: 100%;
+  background-color: #F3D362;
+  border-top-style: solid;
+  animation-name: slideUp;
+  animation-duration: 1s;
+  z-index: 2;
+}
+
+#addextra{
+  margin: 5px;
+  border-style: solid;
+  height: 110px;
+  cursor: pointer;
+  background-color: #FAA669;
+}
+
+.cart{
+  overflow-y: scroll;
+  border-style: solid;
+  border: 0 1px;
+  border-top-style: none;
+  height: 120px;
+  text-align: center;
+}
+
+.cartElement{
+  height: 25px;
+  width: 100%;
+  align-items: center;
+  cursor: pointer;
+  transition: color 0.2s, background-color 0.2s;
+}
+
+.cartElement:hover {
+  color: #F3D362;
+  background-color: #D95252;
+}
+
+#extraimage {
+  height: 108px;
+  width: auto;
+  float: right;
+}
+
+#totalprice{
+  display: inline;
+}
+
+#checkoutbutton{
+  margin: 10px 20%;
+  font-size: 150%;
+  background-color: #D95252;
+  border-style: solid;
+  width: 60%;
+  height: 60px;
+  text-align: center;
+  padding-top: 5px;
 }
 
 .biotext{
   font-size: 120%;
   border-left-style: solid;
-  padding: 2%;
-  margin: 4% 8%;
+  padding: 1%;
+  margin: 24px 8%;
   z-index: 2;
 }
 
@@ -335,12 +453,12 @@ label{
   right: 0;
   top: 150px;
   height: 800px;
-  max-width: 100%;
+  overflow-x: hidden;
 }
 
-#biotextbox{
+#biotext{
   position: absolute;
-  top: 150px;
+  top: 200px;
   left: 0;
 }
 
@@ -371,32 +489,451 @@ label{
   color: black;
 }
 
-@media only screen and (max-width: 1100px) {
-  body {
-    background-color: lightblue;
+@media only screen and (max-width: 1450px) {
+  p{
+    font-size: 75%;
   }
 
+  h3{
+    font-size: 120%;
+  }
+
+  h4{
+    font-size: 100%;
+    margin: 2px 0;
+    text-align: center;
+    width: 49%;
+  }
+
+  .fa{
+    width: 50px;
+    height: 50px;
+    font-size: 40px;
+    margin: 1px 4.5%;
+  }
+
+  #footerbanner{
+    height: 110px;
+  }
+}
+
+@media only screen and (max-width: 1100px) {
+  h2{
+    font-size: 130%;
+  }
+
+  #homepage .col1{
+    width: 80%;
+  }
+  #homepage .col2{
+    width: 10%;
+  }
+
+  #store .col8{
+    width: 5%;
+  }
+
+  #store .customiseBox .col8{
+    width: 20%;
+  }
+
+  #store .col4{
+    width: 90%;
+  }
+
+  #store article .col4{
+    width: 60%;
+  }
+
+  .menunav{
+    font-size: 100%;
+  }
+
+  #addextra{
+    display: none;
+  }
+
+  .order{
+    font-size: 80%;
+    padding-top: 10px;
+  }
+
+  .customiseBox {
+    width: 70%;
+    height: 420px;
+  }
+
+  .customprice{
+    margin-top: 8px;
+    margin-bottom: 11px;
+    font-size: 80%;
+  }
+
+  label{
+    font-size: 80%;
+  }
+
+  #bollywoodbombcustom{
+    top: 510px;
+    left: 0%;
+  }
+
+  #desividesicustom{
+    top: 510px;
+    left: 31.5%;
+  }
+
+  #margheritacustom{
+    top: 785px;
+    left: 0%;
+  }
+
+  #paneergonutscustom{
+    top: 785px;
+    left: 31.5%;
+  }
+
+  #paneermangotangocustom{
+    top: 1055px;
+    left: 0%;
+  }
+
+  #paneeronfirecustom{
+    top: 1055px;
+    left: 31.5%;
+  }
+
+  #popeyelovercustom{
+    top: 1330px;
+    left: 0%;
+  }
+
+  #extraimage{
+    display: none;
+  }
+
+  #add{
+    display: none;
+  }
+
+  #biotext{
+    font-size: 72.5%;
+  }
+
+  .navbanner nav{
+    width: 25%;
+    font-size: 90%;
+    padding: 10px;
+  }
+
+  .nav2
+  {
+    margin-right: 0;
+  }
+
+}
+
+@media only screen and (max-width: 712px) {
+  h4{
+    font-size: 120%;
+    margin: 2px 5%;
+    text-align: center;
+    width: 49%;
+  }
+
+  .fa{
+    width: 50px;
+    height: 50px;
+    font-size: 40px;
+    margin: 1px 4.5%;
+  }
+
+  #footerbanner{
+    height: 130px;
+  }
+
+  #menufooter{
+    bottom: -400px;
+  }
+}
+
+@media only screen and (max-width: 680px) {
   nav{
     float: right;
     width: 25%;
-    border: solid;
-    border-width: thin;
-  }
-
-  .col1{
-    width: 100%;
-    float: none;
+    margin: 12px 0px;
+    font-size: 105%;
+    padding-top: 14px;
+    border-width: 1px 1px 0px 0px;
   }
 
   .nav2{
-    margin-right: 0%;
+    margin-right: 0px;
+    border-width: 1px 0px 0px 0px;
+  }
+
+  .navbanner .col1{
+    width: 100%;
+    float: left;
+  }
+
+  #homepage .col1{
+    width: 100%;
+    float: left;
+   }
+
+  .col2 {
+    width: 0%;
+    display: none;
+  }
+
+  .col4{
+    width: 100%;
+  }
+
+  #store .col4{
+    width: 100%;
+  }
+
+  #store article .col4{
+    width: 100%;
+  }
+
+  .col5{
+    width: 100%;
+  }
+
+  .col6{
+    width: 100%;
+  }
+
+  .col8{
+    width: 50%;
+  }
+
+  #store .col8{
+    width: 0%;
+  }
+
+  .col9{
+    width: 50%;
+  }
+
+  .colgap{
+    width: 0;
+    display: none;
+  }
+
+  .rowgap{
+    height: 0;
+    margin: 0px;
   }
 
   .mainbanner{
-    background: linear-gradient(90deg, rgba(0,0,0,0) 0% rgba(243,211,98,1) 65%, rgba(0,0,0,0) 90%);
+    background: linear-gradient(90deg, rgba(2,0,36,0) 0%, rgba(243,211,98,1) 20%, rgba(243,211,98,1) 80%, rgba(0,212,255,0) 100%);
+  }
+
+  #mainheaderimage{
+    overflow-x: hidden;
+    max-width: 100%;
+    left: 0;
+  }
+
+  .navbanner{
+    padding: 0px;
+    height: 92px;
+    box-shadow: none;
+  }
+
+  #footerbanner{
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .mainbanner .col1{
+    width: 90%;
+  }
+
+  h1{
+    width: 100%;
+    text-align: center;
+  }
+
+  h2{
+    width: 100%;
+    text-align: center;
+  }
+
+  h3{
+    font-size: 160%;
+  }
+
+  h4{
+    font-size: 100%;
+    width: 100%;
+    text-align: center;
+    margin: 4px 0 0 0;
+  }
+
+  .order{
+    font-size: 120%;
+  }
+
+  article{
+    box-shadow: none;
+  }
+
+  .article1{
+    height: 230px;
+    border-width: 1px 0 0 0;
+    border-style: solid;
+    margin: 0px;
+    top: -12px;
+  }
+
+  .article1img{
+    display: none;
+  }
+
+  .menunav{
+    margin: 0;
+    font-size: 75%;
+    padding: auto;
+    height: 40px;
+    position: relative;
+    top: -12px;
+  }
+
+  .article2{
+    height: 230px;
+    border-width: 1px 0 0 0;
+    border-style: solid;
+    margin: 0px;
+    top: -12px;
+  }
+
+  .article2img{
+    width: 100%;
+  }
+
+  .customiseBox{
+    width: 100%;
+    height: 200px;
+    overflow-y: scroll;
+  }
+
+
+  #bollywoodbombcustom{
+    top: 710px;
+    left: 0%;
+  }
+
+  #desividesicustom{
+    top: 1175px;
+    left: 0%;
+  }
+
+  #margheritacustom{
+    top: 1615px;
+    left: 0%;
+  }
+
+  #paneergonutscustom{
+    top: 2070px;
+    left: 0%;
+  }
+
+  #paneermangotangocustom{
+    top: 2550px;
+    left: 0%;
+  }
+
+  #paneeronfirecustom{
+    top: 3045px;
+    left: 0%;
+  }
+
+  #popeyelovercustom{
+    top: 3520px;
+    left: 0%;
+  }
+
+  #addextra{
+    display: none;
+  }
+
+  #checkoutbutton{
+    width: 95%;
+    margin: 2.5%;
+    padding-top: 15px;
+  }
+
+  .cartElement{
+    margin-bottom: 30px;
+  }
+
+  #biotext{
+    font-size: 100%;
   }
 
   .biotext{
     font-size: 100%;
+    margin-top: 15px;
+    position: relative;
+    top: 50px;
   }
+
+  #biobackground{
+    background-image: none;
+  }
+
+  #bioimg{
+    display: none;
+  }
+
+  #menufooter{
+    position: static;
+  }
+
+  #store{
+    background-color: #F3D362;
+    height: 3500px;
+  }
+
+  .fa{
+    width: 100px;
+    height: 20px;
+    font-size: 50px;
+    margin: 2px 15% 0px 15%;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  h2{
+    font-size: 120%;
+  }
+
+  nav{
+    font-size: 100%;
+  }
+
+  aside{
+    display: none;
+  }
+
+  .fa{
+    width: 50px;
+    height: 50px;
+    font-size: 40px;
+    margin: 2px 9% 0px 9%;
+  }
+
+  #footerbanner{
+    height: 155px;
+  }
+}
+
+@keyframes slideUp{
+  from{bottom: -120px;}
+  to{bottom: 0px;}
 }
